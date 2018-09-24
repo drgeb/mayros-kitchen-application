@@ -1,0 +1,11 @@
+version: '2'
+services:
+    mayroskitchen-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/MayrosKitchen/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=MayrosKitchen
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
